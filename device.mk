@@ -42,9 +42,9 @@ PRODUCT_COPY_FILES := \
 # TWRP Additions
 
 PRODUCT_COPY_FILES += \
-        device/generic/x86/recovery.fstab:recovery/root/etc/recovery.fstab \
-        device/generic/x86/recovery/sbin/set_dmi_data.sh:recovery/root/sbin/set_dmi_data.sh \
-        device/generic/x86/recovery/recovery.rc:recovery/root/init.recovery.$(PRODUCT_NAME).rc
+        device/generic/common/recovery.fstab:recovery/root/etc/recovery.fstab \
+        device/generic/common/recovery/sbin/set_dmi_data.sh:recovery/root/sbin/set_dmi_data.sh \
+        device/generic/common/recovery/recovery.rc:recovery/root/init.recovery.$(PRODUCT_NAME).rc
 
 # End TWRP Additions
 
