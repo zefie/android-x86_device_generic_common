@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
         device/generic/common/recovery.fstab:recovery/root/etc/recovery.fstab \
         device/generic/common/recovery/sbin/set_dmi_data.sh:recovery/root/sbin/set_dmi_data.sh \
         device/generic/common/recovery/sbin/nwfermi_daemon:recovery/root/sbin/nwfermi_daemon \
-        device/generic/common/recovery/recovery.rc:recovery/root/init.recovery.$(PRODUCT_NAME).rc \
+	$(if $(wildcard $(PRODUCT_DIR)init.recovery.$(TARGET_PRODUCT).rc),$(PRODUCT_DIR)init.recovery.$(TARGET_PRODUCT).rc,$(LOCAL_PATH)/init.recovery.x86.rc):recovery/root/init.recovery.$(TARGET_PRODUCT).rc \
 	$(call find-copy-subdir-files,*,device/generic/firmware,recovery/root/lib/firmware)
 
 # End TWRP Additions
