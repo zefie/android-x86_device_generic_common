@@ -47,3 +47,6 @@ TW_NO_USB_STORAGE := true
 
 # Touchscreen keycode (330 = BTN_TOUCH)
 # TW_USE_KEY_CODE_TOUCH_SYNC := 330
+
+# Needed for recovery
+KERNEL_MODULES_DIR="/lib"
