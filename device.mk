@@ -44,6 +44,7 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
         device/generic/common/recovery.fstab:recovery/root/etc/recovery.fstab \
         device/generic/common/recovery/sbin/set_dmi_data.sh:recovery/root/sbin/set_dmi_data.sh \
+        device/generic/common/recovery/sbin/nwfermi_daemon:recovery/root/sbin/nwfermi_daemon \
         device/generic/common/recovery/recovery.rc:recovery/root/init.recovery.$(PRODUCT_NAME).rc \
 	$(call find-copy-subdir-files,*,device/generic/firmware,recovery/root/lib/firmware)
 
