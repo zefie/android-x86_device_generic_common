@@ -49,4 +49,4 @@ TW_NO_USB_STORAGE := true
 # TW_USE_KEY_CODE_TOUCH_SYNC := 330
 
 # Needed for recovery
-KERNEL_MODULES_DIR="/lib"
+KERNEL_MODULES_DIR=/lib
