@@ -1,0 +1,4 @@
+/system         ext4    /src/system flags=fsflags=loop
+/data           ext4    /src/data flags=fsflags=loop
+/usb1           auto    /dev/block/sdb1 /dev/block/sdb flags=display="USB Drive";storage;wipeingui;removable
+/usb2           auto    /dev/block/sdc1 /dev/block/sdc flags=display="USB Drive 2";storage;wipeingui;removable

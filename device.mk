@@ -39,6 +39,15 @@ PRODUCT_COPY_FILES := \
     $(if $(wildcard $(PRODUCT_DIR)init.$(TARGET_PRODUCT).rc),$(PRODUCT_DIR)init.$(TARGET_PRODUCT).rc,$(LOCAL_PATH)/init.x86.rc):root/init.$(TARGET_PRODUCT).rc \
     $(if $(wildcard $(PRODUCT_DIR)ueventd.$(TARGET_PRODUCT).rc),$(PRODUCT_DIR)ueventd.$(TARGET_PRODUCT).rc,$(LOCAL_PATH)/ueventd.x86.rc):root/ueventd.$(TARGET_PRODUCT).rc \
 
+# TWRP Additions
+
+PRODUCT_COPY_FILES += \
+        device/generic/x86/recovery.fstab:recovery/root/etc/recovery.fstab \
+        device/generic/x86/recovery/sbin/set_dmi_data.sh:recovery/root/sbin/set_dmi_data.sh \
+        device/generic/x86/recovery/recovery.rc:recovery/root/init.recovery.$(PRODUCT_NAME).rc
+
+# End TWRP Additions
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ppp/ip-up:system/etc/ppp/ip-up \
     $(LOCAL_PATH)/ppp/ip-down:system/etc/ppp/ip-down \

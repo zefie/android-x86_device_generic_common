@@ -83,3 +83,5 @@ TARGET_KERNEL_DIFFCONFIG := device/generic/common/selinux_diffconfig
 COMPATIBILITY_ENHANCEMENT_PACKAGE := true
 PRC_COMPATIBILITY_PACKAGE := true
 ZIP_OPTIMIZATION_NO_INTEGRITY := true
+
+include device/generic/common/BoardConfig_TWRP.mk
